@@ -1,15 +1,18 @@
 <%- include('header') %>
 
-
-    <div class="content-container">
-        <div class="content-title">
-            <h2>Curriculum vitae</h1>
-        </div>
-        <div class="content-body">
-            <p></p>
-                
-            
-        </div> 
+<div class="content-container">
+    <div class="content-title">
+        <h2>Curriculum Vitae</h2>
     </div>
+    <div class="content-body">
+        <%items.forEach(function(item) {%>
+            <div class="cv-items">
+                <p><%=item.title%></p>
+                <p><%=item.body%></p>
+                <p><%=item.year%></p>
+            </div>
+        <% }) %>
+    </div> 
+</div>
 
 <%- include('footer') %>
