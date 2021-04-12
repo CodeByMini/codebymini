@@ -1,61 +1,80 @@
 body {
-    background-color: rgb(163, 212, 197);
-    font-family: 'Open Sans', serif;
+    background-color: rgb(48, 53, 51);
+		font-family: 'jetbrains_monomedium';
+	}
+
+p {
+    font-size: 1.1rem;
+    color:rgb(235, 232, 217)
 }
 
-h1 {
-    color: purple;
-    font-size: 1.5rem;
+.top-container{
+  width: 80%;
+  height: 120px;
+  margin: 0 auto 0 auto;
 }
 
-.p {
-    font-size: 0.1rem;
+.logo{
+  float: left;
+  height: 100px;
+  margin: 10px;
+  background-color: rgb(87, 86, 82);
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }
-
-.header{
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    width: auto;
+.top-container h1 {
+  font-size: 2.8rem;
+  padding: 0px;
 }
+
+.title{
+  margin: 15px auto;
+  float: left;
+  color:rgb(235, 232, 217)
+}
+
 .menu{
     float: right;
-    top: 0;
+    margin: 20px auto;
     width: auto;
+    
 }
 
-.content{
-    display: inline-block;
-    width: auto;
-    min-height: 30%;
-    height: auto
+.hamburger{
+  height: 60px;
+  width: 60px;
 }
-
-div.footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: auto;
-    padding: 10px;
-}
-
-
-
 /*MENU*/
+button {
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: rgb(87, 86, 82);
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 0;
+  border-width: 0px;
+  border-style: outset;
+  border-color: rgb(87, 86, 82);
+  border-image: initial;
+  opacity: 100%;
+}
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
     padding: 10px;
     font-size: 16px;
-    min-width: 160px;
     border: none;
     cursor: pointer;
   }
@@ -63,15 +82,20 @@ div.footer {
   .dropdown {
     position: relative;
     display: inline-block;
+    background-color: rgb(87, 86, 82);
+    color: rgb(87, 86, 82);
+    
   }
   
   .dropdown-content {
+    
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
   }
   
   .dropdown-content a {
@@ -81,12 +105,68 @@ div.footer {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {
+    background-color: rgb(87, 86, 82);
+  }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
   .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    opacity: 50%;
   }
+
+  /*MENU END*/
+
+  .content-container{
+    width: 80%;
+    min-height: 600px;
+    height: auto;
+    margin: 0 auto 0 auto;
+    background-color: rgb(109, 108, 104);
+    text-align: center;
+  }
+  .content-title{
+    position: relative;
+    top: 20px;
+    margin: 20px;
+  }
+  .content-body{
+    position: relative;
+    top: 20px;
+    margin: 20px;
+  }
+  
+  div.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color:rgb(235, 232, 217)
+  }
+
+  @media only screen and (max-width: 700px) {
+    .menu{
+      display: none;
+    }
+    .top-container{
+      width: 100%;
+    }
+    .content{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 485px) {
+   .title{
+     display: none;
+   }
+   .logo{
+     display: block;
+     float: none;
+     margin: 0 auto 0 auto;
+   }
+  }
+
