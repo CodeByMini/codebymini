@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1000px) {
+    .menu{
+      display: none;
+    }
+    .content-container{
+      width: 90%;
+    }
+    .top-container{
+      width: 90%;
+    }
+    .content{
+      width: 100%;
+    }
+    .smallscreenmenu{
+      display: inline-block;
+      background-color: #fff;
+      position: fixed;
+      border: 1px solid;
+      
+      margin: 0px auto 31px auto;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 99;
+    }
+    .menuitems{
+      display: inline;
+      width: 30%;
+      float: left;
+      border: 1px solid;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+    }
+    .menuitems a{
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+   .title{
+     display: none;
+   }
+   .logo{
+     display: block;
+     float: none;
+     margin: 0 auto 0 auto;
+   }
+  }

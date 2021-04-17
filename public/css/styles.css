@@ -200,16 +200,21 @@ button {
   .dropdown:hover .dropbtn {
     opacity: 50%;
   }
+  .menuitems{
+    display: none;
+  }
+
 
   /*MENU END*/
 
   .content-container{
     width: 60%;
     min-height: 400px;
-    height: auto;
+    height: 80%;
     margin: 0 auto 0 auto;
     background-color: rgb(109, 108, 104);
     text-align: center;
+    
   }
   .content-title{
     position: relative;
@@ -231,28 +236,9 @@ button {
     padding: 5px;
     text-align: center;
     z-index: 1;
-    background-color:rgb(49, 49, 45)
+    background-color:rgb(49, 49, 45);
+    font-size:width*0.7em;
+    color:rgb(235, 232, 217)
   }
 
-  @media only screen and (max-width: 1000px) {
-    .menu{
-      display: none;
-    }
-    .top-container{
-      width: 60%;
-    }
-    .content{
-      width: 60%;
-    }
-  }
-
-  @media only screen and (max-width: 850px) {
-   .title{
-     display: none;
-   }
-   .logo{
-     display: block;
-     float: none;
-     margin: 0 auto 0 auto;
-   }
-  }
+  
