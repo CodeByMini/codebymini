@@ -14,12 +14,16 @@
     .content-body{
     margin-bottom:40px;
     }
+    .content-small-container{
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
 
     .smallscreenmenu{
       display: inline-block;
-      background-color: rgb(109, 108, 104);
+      background-color: var(--content-container-color);
       position: fixed;
-      margin: 0px auto 31px 0;
+      margin: 0px auto 20px 0;
       bottom: 0px;
       left: 0px;
       width: 100%;
@@ -28,22 +32,21 @@
     }
     .menuitems{
       display: inline;
-      background-color: rgb(109, 108, 104);
-      width: 32%;
+      background-color: var(--content-container-color);
+      width: 33%;
       float: left;
-      border: 2px solid;
-      border-color: rgb(96, 95, 90);;
+      border-right: 1px solid;
+      border-top: 1px solid;
       text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
       margin: 0 auto 0 auto;
-    }
-    .menuitems a{
-      text-decoration: none;
-      color: rgb(235, 232, 217);
+      overflow: hidden;
+      color: var(--text-color);
+      border-color: var(--main-a-hover-color);
     }
 
-  }
+}
 
   @media only screen and (max-width: 850px) {
    .title{
