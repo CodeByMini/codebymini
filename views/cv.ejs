@@ -2,14 +2,14 @@
 
 <div class="content-container">
     <div class="content-title">
-        <h2>Curriculum Vitae</h2>
+        <h2 class="subTitle">Curriculum Vitae</h2>
     </div>
     <div class="content-body">
         <%items.forEach(function(item) {%>
             <div class="cv-items">
-                <p><%=item.title%></p>
-                <p><%=item.body%></p>
-                <p><%=item.year%></p>
+                <div class="cvTitle"><%=item.title%></div>
+                <div class="cvBody"><%=item.body%></div>
+                <div class="cvYear"><%=item.year%></div>
             </div>
         <% }) %>
     </div> 
