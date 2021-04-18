@@ -14,7 +14,10 @@ const cvItemsSchema = new mongoose.Schema({
         type: String, 
         required:true
     },
-    year: {
+    yearstart: {
+        type: String
+    },
+    yearend: {
         type: String
     }
 });
@@ -39,7 +42,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/cv', function(req, res) {
-    Item.find({}, function(err, items){
+    Item.find({}).sort({yearend : -1}).exec(function(err, items){
         res.render("cv", {items: items});
     });
 });
@@ -57,7 +60,8 @@ app.post('/compose', function(req, res){
     const item = new Item({
         title: req.body.title,
         body: req.body.body,
-        year: req.body.year
+        yearstart: req.body.yearstart,
+        yearend: req.body.yearend
     })
     console.log(item.body)
     item.save(function(err){
