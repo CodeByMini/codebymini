@@ -13,7 +13,7 @@ button {
     text-align: center;
     align-items: flex-start;
     cursor: default;
-    background-color: var(--main-bg-color);
+    background-color: #8c52ff82;
     box-sizing: border-box;
     margin: 0em;
     font: 400 13.3333px Arial;
@@ -22,6 +22,7 @@ button {
     border-style: outset;
     border-color: var(--main-bg-color);
     border-image: initial;
+    border-radius: 25px;
     opacity: 100%;
   }
   
@@ -35,8 +36,8 @@ button {
     .dropdown {
       position: relative;
       display: inline-block;
-      background-color: var(--main-bg-color);
-      color: var(--main-bg-color);
+      
+      
     }
     
     .dropdown-content {
