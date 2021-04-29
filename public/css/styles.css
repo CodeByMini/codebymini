@@ -150,6 +150,11 @@ a:visited{
 
 .cvBody{
   background-color: var(--cv-body-color);
+  padding: 20px;
+}
+
+.cvBody a{
+  color: #000;
 }
 
 .cvYear{
