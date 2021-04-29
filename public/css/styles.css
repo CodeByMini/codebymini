@@ -156,6 +156,9 @@ a:visited{
 .cvBody a{
   color: #000;
 }
+.cvBody p{
+  color: var(--text-title-color);
+}
 
 .cvYear{
   background-color: var(--cv-year-color);
