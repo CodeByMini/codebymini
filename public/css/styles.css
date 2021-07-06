@@ -88,13 +88,13 @@ a:visited{
   width: auto; 
 }
 p.menu-text{
-  display: block;
+  display: inline-block;
   color: var(--text-title-color);
-  float: top;
   font-size: 2rem;
   padding: 0px;
   margin: auto;
   font-weight: bold;
+  
   
 }
 
@@ -131,11 +131,6 @@ p.menu-text{
   left: 10px;
   margin: 20px;
   
-}
-
-.content-small-container{
-  width: 35%;
-  margin: 0 auto 0 auto;
 }
 
 .content-body{
@@ -179,8 +174,14 @@ p.menu-text{
   color: var(--text-title-color);
 }
 
-.contactImages{
+.content-small-container{
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
+.contact-images{
   float: left;
+  padding-right: 10px;
   height: 32px;
   width: 32px;
 }
