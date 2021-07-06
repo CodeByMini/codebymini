@@ -1,10 +1,11 @@
 :root{
-    --main-bg-color: rgb(173, 221, 201);
+    --main-bg-color: rgb(142, 222, 188);
     --main-logo-color: rgb(109, 108, 104);
     
     --text-color: rgb(235, 232, 217);
     --text-title-color: rgb(128, 127, 124);
     --text-body-title-color: rgb(235, 232, 217);
+    --text-shadow-color: rgb(213, 211, 200);
 
     --main-a-color: #ffeb5c;
     --main-a-hover-color: rgb(197, 197, 195);
@@ -13,7 +14,7 @@
 
     --content-container-color: #e88649;
     --cv-items-color: rgba(155, 154, 153, 0);
-    --cv-title-color: rgb(172, 168, 132);
+    --cv-title-color: #68ceafaf;
     --cv-body-color: rgb(235, 232, 217);
     --cv-year-color: rgb(207, 202, 134);
 
@@ -55,7 +56,7 @@ a:visited{
   height: 100px;
   margin: 10px;
   background-color: var(--main-logo-color);
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -68,6 +69,7 @@ a:visited{
 .title{
   margin: 10px auto;
   float: left;
+  text-shadow: 3px 3px var(--text-shadow-color);
   color: var(--text-title-color);
 }
 
@@ -90,17 +92,16 @@ a:visited{
   width: 60px;
 }
 
-.contactImage{
-  float: left;
-  height: 32px;
-  width: 32px;
+.profile-image-container{
+  padding: 20px;
 }
-
 .profile-image{
   float: left;
-  padding: 20px;
-  height: 350px;
-  border-radius: 30px;
+  padding: 0px;
+  height: 300px;
+  border: 2px solid var(--main-a-color);
+  border-radius: 15px;
+
  }
 
 .content-container{
@@ -117,6 +118,7 @@ a:visited{
   position: relative;
   top: 20px;
   margin: 20px;
+  border-radius: 7px;
 }
 
 .content-small-container{
@@ -147,9 +149,14 @@ a:visited{
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+.cvYear{
+  background-color: var(--cv-year-color);
+}
 
 .cvBody{
   background-color: var(--cv-body-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
   padding: 20px;
 }
 
@@ -160,10 +167,10 @@ a:visited{
   color: var(--text-title-color);
 }
 
-.cvYear{
-  background-color: var(--cv-year-color);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+.contactImages{
+  float: left;
+  height: 32px;
+  width: 32px;
 }
   
 div.footer {
