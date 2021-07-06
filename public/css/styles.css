@@ -79,12 +79,23 @@ a:visited{
   padding: 3px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   text-align: center;
+  border-radius:15px;
 }
 
 .menu{
   float: right;
-  margin: 25px auto;
+  margin: 0px auto;
   width: auto; 
+}
+p.menu-text{
+  display: block;
+  color: var(--text-title-color);
+  float: top;
+  font-size: 2rem;
+  padding: 0px;
+  margin: auto;
+  font-weight: bold;
+  
 }
 
 .hamburger{
@@ -117,8 +128,9 @@ a:visited{
 .content-title{
   position: relative;
   top: 20px;
+  left: 10px;
   margin: 20px;
-  border-radius: 7px;
+  
 }
 
 .content-small-container{
