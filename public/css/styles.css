@@ -29,6 +29,7 @@ body {
 }
 
 p {
+  display: block;
   font-size: 1.1rem;
   color: var(--text-color);
 }
@@ -105,6 +106,7 @@ p.menu-text{
 
 .profile-image-container{
   padding: 20px;
+  margin-right: 20px;
 }
 .profile-image{
   float: left;
@@ -184,6 +186,12 @@ p.menu-text{
   padding-right: 10px;
   height: 32px;
   width: 32px;
+}
+.contact-items{
+  height: 50px;
+  width: 600px;
+
+  border-top: 0px solid #ffffff;
 }
   
 div.footer {

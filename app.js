@@ -24,6 +24,15 @@ const cvItemsSchema = new mongoose.Schema({
 
 const Item = mongoose.model('item', cvItemsSchema);
 
+const cvPersonalSchema = new mongoose.Schema({
+    body:  {
+        type: String, 
+        required:true
+    }
+});
+
+const Personal = mongoose.model('personal', cvPersonalSchema);
+
 
 const app = express();
 
@@ -35,10 +44,10 @@ app.use(express.urlencoded({
 }));
 
 
-const data = [0];
-
 app.get('/', function(req, res) {
-    res.render("index", {data: data});
+    Personal.find({}).sort({id : 1}).exec(function(err, personal){
+    res.render("index", {personals: personal});
+    });
 });
 
 app.get('/cv', function(req, res) {
@@ -48,7 +57,15 @@ app.get('/cv', function(req, res) {
 });
 
 app.get('/contact', function(req, res) {
-    res.render("contact", {data: data});
+    res.render("contact");
+});
+
+app.get('/pdf', function(req, res) {
+    Item.find({}).sort({yearend : -1}).exec(function(err, items){
+        Personal.find({}).sort({id : 1}).exec(function(err, personal){
+        res.render("pdf", {items: items, personals: personal});
+    });
+});
 });
 
 app.get('/compose', function(req, res) {
@@ -68,6 +85,22 @@ app.post('/compose', function(req, res){
         if(!err){
             res.redirect("/cv");
         }else{
+            console.log(err)
+        }
+    })
+})
+
+app.post('/personalcompose', function(req, res){
+    console.log(req.body)
+    const personal = new Personal({
+        body: "hejhej"
+    })
+    console.log("hejhejhejehejehejehehje")
+    personal.save(function(err){
+        if(!err){
+            res.redirect("/cv");
+        }else{
+
             console.log(err)
         }
     })
