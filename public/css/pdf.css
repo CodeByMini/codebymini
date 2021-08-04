@@ -30,7 +30,7 @@ body {
 }
 @page {
   size: 21cm 29.7cm;
-  margin: 0mm 15mm 0mm 15mm;
+  margin: 0mm 10mm 0mm 10mm;
 }
 
 .afour{
@@ -87,10 +87,11 @@ a:visited{
 }
 
 .pdf-image-container{
+  display: inline;
   padding: 20px;
 }
 .pdf-image{
-  float: left;
+  
   padding: 0px;
   height: 300px;
   border: 2px solid var(--main-a-color);
@@ -162,6 +163,13 @@ div.footer {
     display: none;
   }
   .logo{
-    background-color: var(--main-logo-color);
+    display: none;
+  }
+  .afour{
+    padding-top: 10px;
+  }
+  .pdf-image{
+    padding: 0px;
+    height: 250px;
   }
 }

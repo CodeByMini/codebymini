@@ -20,22 +20,21 @@
 <a href="javascript:if(window.print)window.print()"><img src="/images/print.png" class="print" /></a>
 <a href="/"><img src="images/logo.png" class="logo"></a>
 <div class="afour">
-<div class="pdf-image-container">
-    <img src="/images/profile-picture.jpeg" class="pdf-image">
-</div>
-<div class="title-container">
-    <h1>Daniel Mini Johansson</h1>
-    <h3>Developer</h3>
-    <h3><a href="mailto:daniel@codebymini.se">daniel@codebymini.se</a></h3>
-    <h3><a href="tel:+46705452930">+46705452930</a></h3>
-    <h3><a href="http://www.codebymini.se">codebymini.se</a></h3>
-</div>
-<div class="pdf-body">
-    <%personals.forEach(function(personal) {%>
-        <%-personal.body%>
-    <% }) %>
-    
-</div> 
+    <div class="pdf-image-container">
+        <img src="/images/profile-picture.jpeg" class="pdf-image">
+    </div>
+    <div class="title-container">
+        <h1>Daniel Mini Johansson</h1>
+        <h3>Developer</h3>
+        <h3><a href="mailto:daniel@codebymini.se">daniel@codebymini.se</a></h3>
+        <h3><a href="tel:+46705452930">+46705452930</a></h3>
+        <h3><a href="http://www.codebymini.se">codebymini.se</a></h3>
+    </div>
+    <div class="pdf-body">
+        <%personals.forEach(function(personal) {%>
+            <%-personal.body%>
+        <% }) %>
+    </div> 
 </div>
 <div class="afour">
 <h2>Tidigare erfarenheter</h2>
