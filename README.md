@@ -1,6 +1,7 @@
 <div align="center">
 
 # Daniel Mini Johansson
+
 <a href="http://www.codebymini.se">CodeByMini</a>
 
 ### If art was meant to be easy, Michelangelo would have painted the floor
