@@ -5,7 +5,7 @@ ENV NODE_ENV=production
 
 WORKDIR /src
 
-RUN git clone https://github.com/CodeByMini/codebymini
+RUN git clone https://github.com/codebymini/codebymini
 
 COPY ["package.json", "package-lock.json*", "./"]
 
