@@ -31,7 +31,7 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            ./*
+            .
           outPath: deploy.tar
 
       - uses: caprover/deploy-from-github@main
