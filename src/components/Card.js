@@ -1,24 +1,31 @@
+export function CardWrapper({children}) {
+    return (
+        <div className='flex flex-col p-6 shadow-2xl border-xs shadow-gray-900 rounded-lg m-5 w-60'>{children}</div>
+    )}
+
 export default function Card({title, subtitle, date}) {
     return (
-        <div className='flex flex-col p-6 border-2 border-orange-600 m-5 w-60'>
-            <div className='flex flex-col text-lg'>
+        <CardWrapper>
+            <div className='flex flex-col text-lg items-center mb-4'>
                 {title}
             </div>
-            <div className='flex flex-col text-sm'>
-
-                {subtitle.map((sub) => {
-                    return (
-                        <div>
+            {subtitle && (
+                <div className='flex flex-col text-sm justify-center items-center mb-4'>
+                    {subtitle.map((sub) => {
+                        return (
+                            <div key={Math.random()}>
                             {sub}
                         </div>
                     );
-                }
-                )}
-            </div>
+                    })}
+                </div>
+            )}
+        {date && (
             <div className='flex flex-col text-sm items-end'>
-
                 {date}
             </div>
-        </div>
+        )}
+        </CardWrapper>
+
     );
 }
