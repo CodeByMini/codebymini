@@ -21,7 +21,7 @@ function App() {
           <img src="images/profile-picture.png" alt="logo" className='grayscale h-lvh opacity-30 min-w-full object-scale-down'/>
         </div>
         </SectionRow>
-        <SectionCol>
+        <SectionCol background={"images/background.png"}>
           
           <div className='flex flex-row p-8 h-[35vh]'>
             <Card

@@ -1,6 +1,6 @@
 export function CardWrapper({children}) {
     return (
-        <div className='flex flex-col p-6 shadow-2xl border-xs shadow-gray-900 rounded-lg m-5 w-60'>{children}</div>
+        <div className='flex flex-col p-6 shadow-2xl border-2 bg-[#282c34] shadow-gray-900 rounded-lg m-5 w-60 border-neutral-600'>{children}</div>
     )}
 
 export default function Card({title, subtitle, date}) {
