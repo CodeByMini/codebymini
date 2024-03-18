@@ -1,33 +1,32 @@
 import './output.css';
 import Contact from './components/Contact';
 
-
 function MobileApp() {
   return (
-    <div className='bg-[#282c34] min-h-screen relative'>
-      <div className='text-white absolute bottom-1/3'>
-        <div className='flex flex-col items-center justify-center w-screen'>
-          <div className='flex flex-col items-end justify-end'>
-        <p className='text-3xl'>
-            Daniel Johansson
-          </p>
-          <p className='text-3xl'>
-          Developer
-          </p>
+    <div className="bg-[#282c34] min-h-screen relative">
+      <div className="text-white">
+        <div className="flex flex-col items-center justify-center w-screen">
+          <div className="flex flex-col items-end justify-end w-2/3">
+            <p className="text-3xl">Daniel Johansson</p>
+            <p className="text-3xl">Developer</p>
           </div>
-          </div>
+        </div>
       </div>
-      <img src="images/profile-picture.png" alt="logo" className='w-[100vw] grayscale opacity-30 object-scale-down'/>
-      <div className='flex justify-center items-center'>
+      <img
+        src="images/profile-picture.png"
+        alt="logo"
+        className="w-[100vw] grayscale opacity-50 object-scale-down"
+      />
+      <div className="flex justify-center items-center text-white">
         <Contact
-                title="Contact"
-                linkedin={["https://www.linkedin.com/in/codebymini/"]}
-                github={["https://github.com/codebymini/"]}
-                email={["daniel@codebymini.se"]}
-                />
+          title="Contact"
+          linkedin={['https://www.linkedin.com/in/codebymini/']}
+          github={['https://github.com/codebymini/']}
+          email={['daniel@codebymini.se']}
+        />
       </div>
     </div>
-  )
+  );
 }
 //   return (
 //     <div className='bg-[#282c34] w-full'>
@@ -45,7 +44,7 @@ function MobileApp() {
 //         </div>
 //         </div>
 //         <div background={"images/background.png"}>
-          
+
 //           <div className='flex flex-row p-8 h-[35vh]'>
 //             <Card
 //               title="OneTwo Analytics"
@@ -55,7 +54,7 @@ function MobileApp() {
 //                 {/* <img src="images/onetwo-analytics-logo.svg" alt="logo" className='h-20 w-40'/> */}
 //                 <div>Currently employed as a Fullstack developer</div>
 //                 <div className='flex flex-row items-center justify-around w-full'>
-//                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"  alt="ts" className='h-[30px] w-[30px]'/>            
+//                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"  alt="ts" className='h-[30px] w-[30px]'/>
 //                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" className='h-[30px] w-[30px]'/>
 //                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" alt="postgres" className='h-[30px] w-[30px]'/>
 //                 </div>
